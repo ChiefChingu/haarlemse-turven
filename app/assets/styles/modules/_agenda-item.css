@@ -21,6 +21,10 @@
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1),0 0 1px 0 rgba(0, 0, 0, .5);
     border-radius: 3px;
 
+    &-current {
+        box-shadow: 0 0 8px 0 rgb(244, 107, 69),0 0 1px 0 rgb(238, 168, 73);
+    }
+
     &--header {
         font-size: 1rem;
         padding-top: 1.5em;
@@ -78,6 +82,10 @@
         background: linear-gradient(-180deg,#fff 50%,#f6f6f6);
         text-decoration: none;
         border-radius: 3px;
+
+        &-tbd {
+            color: grey;
+        }
     }
 
     a:hover {
@@ -85,5 +93,11 @@
         color: #ffffff;
     }
 
+    a.tbd:hover {
+        background: linear-gradient(-180deg,#fff 50%,#f6f6f6);
+        color: grey;
+    }
+
 }
+
 
