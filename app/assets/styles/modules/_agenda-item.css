@@ -1,0 +1,89 @@
+.agenda__heading {
+    color: #ffffff;
+    background: linear-gradient(to right, rgb(244, 107, 69), rgb(238, 168, 73));
+    text-align: center;
+    padding: 1em;
+    margin: 0 0 3rem 0;
+    border-top: 12px solid $mainOrange;
+}
+
+.agenda__day {
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: minmax(5%,1fr) 25% 50% minmax(5%,1fr);
+    grid-template-rows: 60px auto 30px 30px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    height: 280px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1),0 0 1px 0 rgba(0, 0, 0, .5);
+    border-radius: 3px;
+
+    &--header {
+        font-size: 1rem;
+        padding-top: 1.5em;
+        margin: 0;
+        grid-column: 1 / 5;
+        align-self: center; 
+    }
+
+    &--header--date {
+        font-size: 1rem;
+        padding: 1em 1em 0 1em;
+        margin: 0;
+        grid-column: 2 / 4;
+        align-self: center;
+        font-weight: 400;
+        color: grey;
+    }
+
+    &--header--club {
+        color: $mainBlue;
+        font-size: 1.3rem;
+        margin: 0;
+        padding-top: 0.2em;
+    }
+
+    &--icon {
+        grid-column-start: 2;
+        width: 100px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    &--content {
+        grid-column-start: 3;
+        justify-self: center;
+        align-self: center;
+        text-align: left;
+        
+
+        &--item {
+            font-weight: 100;
+            margin-top: 0.5em;
+            
+        }
+    }
+
+    &--cta {
+        color: $mainOrange;
+        border: solid 0.1em rgba(0, 0, 0, .1);
+        padding: 0.5em 0;
+        grid-row-start: 3;
+        grid-column: 2 / 4;
+        align-self: center;
+        width: 100%;
+        background: linear-gradient(-180deg,#fff 50%,#f6f6f6);
+        text-decoration: none;
+        border-radius: 3px;
+    }
+
+    a:hover {
+        background: linear-gradient(to right, rgb(244, 107, 69), rgb(238, 168, 73));
+        color: #ffffff;
+    }
+
+}
+

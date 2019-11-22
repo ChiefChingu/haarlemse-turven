@@ -1,0 +1,22 @@
+.large-hero {
+    border-bottom: 10px solid $mainOrange;
+    position: relative;
+    background: rgba(213, 255, 254, 1);
+  
+    &__image {
+      display: block;
+    }
+  
+    h1 {
+      font-family: Anton;
+      color: rgb(244, 107, 69);
+      text-align: center;
+      padding-top: 6rem;
+      font-size: 2.9rem;
+      font-weight: 100;
+      margin: 0;
+      
+      
+    }
+  
+  }

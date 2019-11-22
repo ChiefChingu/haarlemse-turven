@@ -1,0 +1,12 @@
+.site-header {
+    top: 0;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(to right, rgb(244, 107, 69, 0.8), rgb(238, 168, 73, 0.5));
+    
+    &--dark {
+      background: linear-gradient(to right, rgba(244, 107, 69), rgba(238, 168, 73));
+      
+    }
+  }
