@@ -19,3 +19,7 @@ img {
 a {
   color: $mainOrange;
 }
+
+p {
+  margin: 0;
+}

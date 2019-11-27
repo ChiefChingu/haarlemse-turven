@@ -8,12 +8,14 @@
     }
   
     h1 {
-      font-family: Anton;
-      color: rgb(244, 107, 69);
+      
+      background: linear-gradient(to right, rgb(244, 107, 69), rgb(238, 168, 73));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       text-align: center;
       padding-top: 6rem;
       font-size: 2.9rem;
-      font-weight: 100;
+      
       margin: 0;
       
       

@@ -1,4 +1,125 @@
+
 .next-game {
-    height: 350px;
-    grid-template-rows: 30px auto 30px 30px;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: minmax(5%,1fr) 25% 12.5% 12.5% 12.5% 12.5% minmax(5%,1fr);
+    grid-template-rows: 65px auto;    
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-bottom: 25px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1),0 0 1px 0 rgba(0, 0, 0, .5);
+    border-radius: 3px;
+
+    &__subtitle {
+        text-align: center;
+        color: $mainBlue;
+    }
+
+    &__header {
+        font-size: 1rem;
+        padding-top: 0;
+        margin: 0;
+        grid-column: 1 / 8;
+        align-self: center; 
+    
+
+        &--date {
+            font-size: 1rem;
+            padding: 1em 1em 0 1em;
+            margin: 0;
+            grid-column: 2 / 4;
+            align-self: center;
+            font-weight: 400;
+            color: grey;
+        }
+
+        &--club {
+            color: $mainBlue;
+            font-size: 1.3rem;
+            margin: 0;
+            padding-top: 0.2em;
+        }
+    
+
+        &--time {
+            color: $mainBlue;
+            font-size: 1.3rem;
+            margin: 0;
+            padding-top: 0.2em;
+        }
+
+        &--pitch {
+            font-size: 1rem;
+            padding: 1em 1em 0 1em;
+            margin: 0;
+            grid-column: 2 / 4;
+            align-self: center;
+            font-weight: 400;
+            color: grey;
+        }
+    }
+    &__icon {
+        grid-column: 2 / 3;
+        max-height: 95px;
+        max-width: 125px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    &__content {
+        grid-column: 3 / 7;
+        justify-self: center;
+        align-self: center;
+        text-align: left;
+        
+
+        &--item {
+            grid-column-start: 4;
+            font-weight: 300;
+            margin-top: 0.5em;
+            
+        }
+    }
+
+    &__content--schedule {
+        grid-column: 3 / 6;
+        justify-self: start;
+        align-self: center;
+        /* text-align: left; */
+        padding-top: 1rem;
+        font-size: 0.7rem;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 1.5rem repeat(5, 1.1rem);
+        width: 100%;
+        margin-bottom: 1rem;
+        
+        &-title {
+            color: $mainBlue;
+            font-weight: 500;
+            grid-column: 1 / 3;
+            justify-self: end;
+            
+        }
+
+        &-item {
+            font-weight: 300;
+            
+            grid-column-start: 1;
+            align-self: center;
+            justify-self: end;
+       
+            &-number {
+                grid-column-start: 2;
+                align-self: center;
+                justify-self: end;
+            }
+            
+        }
+    }
+
 }
+

@@ -16,7 +16,9 @@
 
     &--results-count {
         font-size: 6rem;
-        color: $mainOrange;
+        background: linear-gradient(to right, rgb(244, 107, 69), rgb(238, 168, 73));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-weight: 600;
         grid-column: 2 / 7;
         justify-self: center;
