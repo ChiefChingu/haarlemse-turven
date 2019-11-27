@@ -1,0 +1,4 @@
+.next-game {
+    height: 350px;
+    grid-template-rows: 30px auto 30px 30px;
+}

@@ -12,3 +12,12 @@
       
     }
   }
+
+  .section__heading {
+    color: #ffffff;
+    background: linear-gradient(to right, rgb(244, 107, 69), rgb(238, 168, 73));
+    text-align: center;
+    padding: 1em;
+    margin: 0 0 3rem 0;
+    /* border-top: 12px solid $mainOrange; */
+}
