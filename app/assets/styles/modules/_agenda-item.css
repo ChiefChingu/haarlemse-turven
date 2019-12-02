@@ -43,7 +43,7 @@
 
     &--icon {
         grid-column-start: 2;
-        height: 95px;
+        max-height: 95px;
         justify-self: center;
         align-self: center;
     }
