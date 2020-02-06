@@ -5,6 +5,11 @@
   
     &__image {
       display: block;
+
+      @mixin atSmall {
+        max-heigth: 200px;
+      }
+
     }
   
     h1 {
