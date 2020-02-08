@@ -2,12 +2,14 @@
     /* border-bottom: 10px solid $mainOrange; */
     position: relative;
     background: rgba(213, 255, 254, 1);
+    
   
     &__image {
       display: block;
+      max-heigth: 200px;
 
-      @mixin atSmall {
-        max-heigth: 200px;
+      @mixin atLarge {
+        max-heigth: 100px;
       }
 
     }
