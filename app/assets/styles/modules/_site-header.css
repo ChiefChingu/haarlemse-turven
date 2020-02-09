@@ -19,5 +19,11 @@
     text-align: center;
     padding: 1em;
     margin: 0 0 3rem 0;
+    height: 75.6px;
+    
+    
+    @mixin atSmall {
+      height: 281px;
+    }
     /* border-top: 12px solid $mainOrange; */
 }
