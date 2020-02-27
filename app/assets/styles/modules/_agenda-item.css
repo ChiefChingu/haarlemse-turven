@@ -46,6 +46,10 @@
         align-self: center;
         font-weight: 400;
         color: grey;
+
+        @mixin atLarge {
+            font-size: 0.9rem;
+        }
     }
 
     &--header--club {
@@ -53,11 +57,16 @@
         font-size: 1.3rem;
         margin: 0;
         padding-top: 0.2em;
+
+        @mixin atLarge {
+            font-size: 1.1rem;
+        }
     }
 
     &--icon {
         grid-column-start: 2;
         max-height: 95px;
+        max-width: 80%;
         justify-self: center;
         align-self: center;
     }
@@ -67,16 +76,15 @@
         justify-self: center;
         align-self: center;
         text-align: left;
-
-        @mixin atSmall{
-            padding-left: 10px;
-        }
-        
+        max-width: 90%;       
 
         &--item {
             font-weight: 300;
             margin-top: 0.5em;
             
+            @mixin atLarge {
+                font-size: 0.9rem;
+            }
         }
     }
 
@@ -112,5 +120,3 @@
     }
 
 }
-
-

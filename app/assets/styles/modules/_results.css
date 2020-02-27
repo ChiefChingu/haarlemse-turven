@@ -1,6 +1,7 @@
 
 .results__day {
     background: #ffffff;
+    height: 280px;
     display: grid;
     grid-template-columns: minmax(5%,1fr) 25% 12% 1% 12% 25% minmax(5%,1fr);
     grid-template-rows: 5rem 1.6rem 2rem 30px 30px 30px;
@@ -8,11 +9,21 @@
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    height: 240px;
     margin-bottom: 15px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1),0 0 1px 0 rgba(0, 0, 0, .5);
     border-radius: 3px;
-    padding-top: 1rem;
+    padding-top: 2.5rem;
+
+    @mixin atLarge {
+        justify-self: stretch;
+        width: 96%;
+        grid-column: 2/5;
+    }
+
+    @mixin atXLarge {
+        justify-self: stretch;
+        width: 97.5%;
+    }
 
     &--results-count {
         font-size: 6rem;
@@ -65,10 +76,23 @@
         background: linear-gradient(-180deg,#fff 50%,#f6f6f6);
         text-decoration: none;
         border-radius: 3px;
+
+        @mixin atLarge {
+            width: 208px;
+        }
     }
 
     a:hover {
         background: linear-gradient(to right, rgb(244, 107, 69), rgb(238, 168, 73));
         color: #ffffff;
+    }
+}
+
+.h2 {
+    padding: 0;
+    margin: 0;
+
+    @mixin atMedium {
+        margin: 2rem 0 1rem 0;
     }
 }

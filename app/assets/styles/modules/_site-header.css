@@ -20,10 +20,30 @@
     padding: 1em;
     margin: 0 0 3rem 0;
     height: 75.6px;
+    width: 90%;
+    justify-self: center;
+    border-radius: 3px;
+
+    h2 {
+      padding: 0;
+      margin: 0;
+
+      @mixin atMedium {
+          margin: 2rem 0 1rem 0;
+      }
+    }
     
     
-    @mixin atSmall {
+    @mixin atMedium {
       height: 281px;
+      width: 90%;
+      justify-self: center;
+    }
+
+    @mixin atLarge {
+      height: 281px;
+      width: 280px;
+      justify-self: center;
     }
     /* border-top: 12px solid $mainOrange; */
 }

@@ -9,9 +9,7 @@
     margin: 0 5px 5px 5px;
     position: relative;
 
-    @mixin atSmall {
-      width: 72px;
-    }
+    
 
     img {
       display: block;

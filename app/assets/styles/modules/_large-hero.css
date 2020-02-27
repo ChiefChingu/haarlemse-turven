@@ -2,7 +2,11 @@
     /* border-bottom: 10px solid $mainOrange; */
     position: relative;
     background: rgba(213, 255, 254, 1);
-    width: 100%;   
+    width: 100%;
+    
+    @mixin atMedium {
+      background: rgba(210, 242, 253, 1);
+    }
   
     h1 {
       background: linear-gradient(to right, rgb(244, 107, 69), rgb(238, 168, 73));
@@ -11,6 +15,11 @@
       text-align: center;
       padding-top: 6rem;
       font-size: 2.9rem;
-      margin: 0;    
+      margin: 0;
+      
+      @mixin atMedium {
+        padding-top: 3rem;
+      }
+      
     }
   }
